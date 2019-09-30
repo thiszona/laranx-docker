@@ -2,7 +2,9 @@
 
 Linux, Nginx, PHP stack using Docker Container
 
+CODE REPO : [https://github.com/ZonaBudi/laranx-docker](https://github.com/ZonaBudi/laranx-docker)
 
+DOCKER HUB : [https://hub.docker.com/r/justzona/lara-nginx](https://hub.docker.com/r/justzona/lara-nginx)
 ## Usage
 
 ```bash
