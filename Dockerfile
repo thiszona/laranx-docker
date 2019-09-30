@@ -6,7 +6,7 @@ RUN apt-get update
 RUN ln -fs /usr/share/zoneinfo/Asia/Jakarta /etc/localtime
 RUN apt-get install -y tzdata
 RUN dpkg-reconfigure --frontend noninteractive tzdata
-RUN apt-get install -y wget curl software-properties-common locales
+RUN apt-get install -y wget curl zip unzip software-properties-common locales
 
 ENV TERM=xterm
 
@@ -24,7 +24,8 @@ RUN apt-get install -y \
     php7.3-mbstring \
     php7.3-bcmath \
     php-redis \
-    php7.3-xdebug
+    php7.3-xdebug \
+    php7.3-zip
 
 ADD config/php/www.conf /etc/php/7.3/fpm/pool.d/www.conf
 
