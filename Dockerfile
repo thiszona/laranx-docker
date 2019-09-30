@@ -18,6 +18,7 @@ RUN apt-get install -y \
     php7.3 \
     php7.3-fpm \
     php7.3-pgsql \
+    php7.3-sqlite \
     php7.3-json \
     php7.3-curl \
     php7.3-xml\
