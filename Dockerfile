@@ -27,7 +27,7 @@ RUN apt-get install -y \
     php-redis \
     php7.3-xdebug \
     php7.3-zip \
-    php7.3-gd2 
+    php7.3-gd
 
 ADD config/php/www.conf /etc/php/7.3/fpm/pool.d/www.conf
 
