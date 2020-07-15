@@ -6,7 +6,7 @@ RUN apt-get update
 RUN ln -fs /usr/share/zoneinfo/Asia/Jakarta /etc/localtime
 RUN apt-get install -y tzdata
 RUN dpkg-reconfigure --frontend noninteractive tzdata
-RUN apt-get install -y wget curl zip unzip software-properties-common locales apt-transport-https ca-certificates git make
+RUN apt-get install -y wget curl zip unzip software-properties-common locales apt-transport-https ca-certificates git make acl
 
 ENV TERM=xterm
 
