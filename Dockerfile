@@ -39,7 +39,8 @@ RUN git clone https://github.com/arnaud-lb/php-rdkafka.git && cd php-rdkafka && 
     ./configure && \
     make all -j 5 && \
     make install
-RUN echo "extension=rdkafka.so" >> /etc/php/7.4/cli/conf.d/20-kafka.ini,
+RUN echo "extension=rdkafka.so" >> /etc/php/7.4/cli/php.ini
+RUN echo "extension=rdkafka.so" >> /etc/php/7.4/fpm/php.ini
 ADD config/php/www.conf /etc/php/7.4/fpm/pool.d/www.conf
 
 
